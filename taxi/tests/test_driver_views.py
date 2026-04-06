@@ -35,7 +35,7 @@ class DriverSearchTest(TestCase):
         )
         self.client.login(username="admin", password="admin123")
 
-    def test_search_by_model(self):
+    def test_search_by_username(self):
         response = self.client.get(
             DRIVER_URL,
             {"username": "james"}
